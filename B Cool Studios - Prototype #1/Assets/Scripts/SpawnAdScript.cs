@@ -36,34 +36,47 @@ public class SpawnAdScript : MonoBehaviour
 
             if (randomResult > spawnPercentage)
             {
-                Debug.Log("Spawned");
 
                 randomAd = Random.Range(0.0f, 6.0f);
 
                 if(randomAd <= 1.0f)
                 {
                     ads[0].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
                 else if (randomAd <= 2.0f)
                 {
                     ads[1].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
                 else if (randomAd <= 3.0f)
                 {
                     ads[2].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
                 else if (randomAd <= 4.0f)
                 {
                     ads[3].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
                 else if (randomAd <= 5.0f)
                 {
                     ads[4].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
                 else if (randomAd <= 6.0f)
                 {
                     ads[5].gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Ad Open");
+                    Debug.Log("Sound Playing");
                 }
+
+                
             }
         }
         
@@ -75,7 +88,6 @@ public class SpawnAdScript : MonoBehaviour
         {
             yield return new WaitForSeconds(0.2f);
             spawnPercentage -= spawnPercentageDecrease;
-            Debug.Log("Decrease!");
         }
         
     }
