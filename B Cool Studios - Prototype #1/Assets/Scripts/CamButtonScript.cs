@@ -24,6 +24,12 @@ public class CamButtonScript : MonoBehaviour
         StartCoroutine(postButton());
     }
 
+    public void ButtonReleased()
+    {
+        Debug.Log("You've released the button");
+        StopCoroutine(postButton());
+    }
+
 
     IEnumerator postButton()
     {
