@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
     private float horizontalMove = 0f;
-    private Rigidbody rb;
+    private CharacterController controller;
     private Vector3 move;
     
     public float veeringSpeed;
@@ -14,18 +14,18 @@ public class CarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = joystick.Horizontal * veeringSpeed;
-        move = new Vector3(0, 0, horizontalMove);
+        move = new Vector3(horizontalMove, 0, 0);
 
         if(horizontalMove != 0)
         {
-            rb.MovePosition(move);
+            controller.Move(move * veeringSpeed * Time.deltaTime);
         }
 
         Debug.Log(horizontalMove);
