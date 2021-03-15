@@ -43,4 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a097aa7b3d7aa045a69932f021a0a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: BEEP BEEP
+    clip: {fileID: 8300000, guid: 0f79c41c27c62e5408959ff119dd42e4, type: 3}
+    volume: 1
+    pitch: 1.01
+    loop: 0
+    source: {fileID: 0}
+  - name: VROOM
+    clip: {fileID: 8300000, guid: 2d5f11a8425342a4fb8b74e29384312e, type: 3}
+    volume: 0.298
+    pitch: 1.05
+    loop: 1
+    source: {fileID: 0}
+  - name: Crash
+    clip: {fileID: 8300000, guid: 18b6d1191addc1448aab3af8c681d8e1, type: 3}
+    volume: 0.298
+    pitch: 1.05
+    loop: 0
+    source: {fileID: 0}
+  - name: Scream
+    clip: {fileID: 8300000, guid: 774264bc5b861f84081780a07a2d4ef5, type: 3}
+    volume: 0.298
+    pitch: 1.05
+    loop: 0
+    source: {fileID: 0}
