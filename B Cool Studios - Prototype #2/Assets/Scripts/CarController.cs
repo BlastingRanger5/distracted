@@ -43,8 +43,13 @@ public class CarController : MonoBehaviour
         rotation = new Vector3(0, horizontalMove, 0);
 
         controller.Move(move * Time.deltaTime);
-        
-        steeringWheel.transform.Rotate(rotation);
+
+        steeringWheel.transform.eulerAngles = new Vector3((horizontalMove * 70), 90, -90);
+
+        //if ((steeringWheel.transform.rotation.x > 0) && (steeringWheel.transform.rotation.x < 180))
+        //{
+            //steeringWheel.transform.Rotate(rotation);
+        //}
 
 
     }

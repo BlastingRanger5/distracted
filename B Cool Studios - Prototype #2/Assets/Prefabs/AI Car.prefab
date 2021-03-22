@@ -982,6 +982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b62e0ab66b63c4899b81de1fbb9822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCar: {fileID: 4156047808400432480, guid: 079c38a8e1069624b941304fd58468bb,
+    type: 3}
   forwardMotion: 20
 --- !u!143 &688986941970396130
 CharacterController:

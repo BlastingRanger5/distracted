@@ -13,6 +13,8 @@ public class AICarController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
+        StartCoroutine(SelfDestruct());
     }
 
     // Update is called once per frame
@@ -21,5 +23,12 @@ public class AICarController : MonoBehaviour
         move = new Vector3(0, 0, forwardMotion);
 
         controller.Move(move * Time.deltaTime);
+    }
+
+    private IEnumerator SelfDestruct()
+    {
+        yield return new WaitForSeconds(10);
+
+        this.gameObject.SetActive(false);
     }
 }
