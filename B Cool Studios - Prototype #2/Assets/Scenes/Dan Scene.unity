@@ -1354,6 +1354,11 @@ PrefabInstance:
       propertyPath: blackScreen
       value: 
       objectReference: {fileID: 437020602}
+    - target: {fileID: 791176045254547303, guid: 079c38a8e1069624b941304fd58468bb,
+        type: 3}
+      propertyPath: forwardMotion
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4156047808400432480, guid: 079c38a8e1069624b941304fd58468bb,
         type: 3}
       propertyPath: m_Name
