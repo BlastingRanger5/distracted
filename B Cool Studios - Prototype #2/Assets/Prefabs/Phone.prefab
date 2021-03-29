@@ -106,3 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62deb9766255a084d9171ec483045ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reply: {fileID: 0}
+  convoText: {fileID: 0}
+  replyText: {fileID: 0}

@@ -135,13 +135,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998721340810103540, guid: 079c38a8e1069624b941304fd58468bb,
         type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998721340810103540, guid: 079c38a8e1069624b941304fd58468bb,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 36226dfbb99d15c4081f04e4b3e00c68, type: 2}
     - target: {fileID: 6227319616804697116, guid: 079c38a8e1069624b941304fd58468bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6789369644379111913, guid: 079c38a8e1069624b941304fd58468bb,
         type: 3}
@@ -561,10 +566,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 649488915}
-  selectedCommands:
-  - {fileID: 649488919}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -590,7 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 649488915}
   suppressBlockAutoSelect: 0
-  waitForFrames: 1
+  waitForFrames: 300
 --- !u!114 &649488915
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -678,7 +681,7 @@ MonoBehaviour:
   sayDialog: {fileID: 847333150}
 --- !u!114 &649488919
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
