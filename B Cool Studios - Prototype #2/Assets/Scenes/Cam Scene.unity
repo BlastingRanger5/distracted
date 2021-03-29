@@ -224,7 +224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &234890783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 58.5, y: 83.70497}
+  m_AnchoredPosition: {x: 58.5, y: -52}
   m_SizeDelta: {x: 77.900024, y: 77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272819933
@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 649488914}
   - component: {fileID: 649488917}
   - component: {fileID: 649488918}
+  - component: {fileID: 649488919}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -560,8 +561,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 649488915}
+  selectedCommands:
+  - {fileID: 649488919}
   variables: []
   description: 
   stepPause: 0
@@ -615,6 +618,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 649488918}
   - {fileID: 649488917}
+  - {fileID: 649488919}
   suppressAllAutoSelections: 0
 --- !u!4 &649488916
 Transform:
@@ -672,6 +676,33 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   sayDialog: {fileID: 847333150}
+--- !u!114 &649488919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649488912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  storyText: How are you doing?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &686300232
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: 757, y: 147}
+  m_AnchoredPosition: {x: 757, y: 102}
   m_SizeDelta: {x: -1262.5018, y: -63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686300234
@@ -799,8 +830,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795327351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -117.82}
+  m_LocalScale: {x: 0.0029936593, y: 0.0029936593, z: 0.0029936593}
   m_Children:
   - {fileID: 1485720017}
   - {fileID: 234890786}
@@ -811,8 +842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -750.0001, y: 0}
-  m_SizeDelta: {x: 1500, y: 335}
+  m_AnchoredPosition: {x: 3396.5024, y: -1080.5}
+  m_SizeDelta: {x: 1508.2964, y: 335}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &795327353
 MonoBehaviour:
@@ -947,7 +978,7 @@ RectTransform:
   m_GameObject: {fileID: 847333149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.21681602, y: 0.21681602, z: 0.21681602}
   m_Children:
   - {fileID: 795327352}
   m_Father: {fileID: 0}
@@ -955,9 +986,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -729.9, y: 282.78}
+  m_SizeDelta: {x: 1855.4531, y: 429.00513}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847333152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,8 +1014,8 @@ Canvas:
   m_GameObject: {fileID: 847333149}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 368887870}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1268,7 +1299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1485720017
 RectTransform:
   m_ObjectHideFlags: 0
