@@ -18,8 +18,10 @@ public class RoadScoot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //If a gameobject with the tag player hits the collider...
         if (other.CompareTag("Player"))
         {
+            //Move the road forward by 248.2 units
             this.gameObject.transform.position = new Vector3(0, 0, this.gameObject.transform.position.z + 248.2f);
         }
     }
